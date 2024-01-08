@@ -61,7 +61,7 @@ class _AbsensiPageState extends State<AbsensiPage> {
                         borderRadius:
                             const BorderRadius.all(Radius.circular(50.0)),
                         child: Image.network(
-                          'https://avatars.githubusercontent.com/u/534678?v=4',
+                          'https://avatars.githubusercontent.com/u/46390894?v=4',
                           width: 72.0,
                           height: 72.0,
                           fit: BoxFit.cover,
