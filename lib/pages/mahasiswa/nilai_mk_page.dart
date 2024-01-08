@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../common/components/custom_scaffold.dart';
 import '../../common/constants/colors.dart';
 import 'models/course_grade_model.dart';
-import 'widgets/couse_grade_tile.dart';
+import 'widgets/course_grade_tile.dart';
 
 class NilaiMkPage extends StatefulWidget {
   const NilaiMkPage({super.key});
