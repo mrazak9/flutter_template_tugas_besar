@@ -315,50 +315,50 @@ mixin _$LoginState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() Loading,
-    required TResult Function(AuthResponseModel data) Loaded,
-    required TResult Function() Error,
+    required TResult Function() loading,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function(String message) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? Loading,
-    TResult? Function(AuthResponseModel data)? Loaded,
-    TResult? Function()? Error,
+    TResult? Function()? loading,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function(String message)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? Loading,
-    TResult Function(AuthResponseModel data)? Loaded,
-    TResult Function()? Error,
+    TResult Function()? loading,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function(String message)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) Loading,
-    required TResult Function(_Loaded value) Loaded,
-    required TResult Function(_Error value) Error,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? Loading,
-    TResult? Function(_Loaded value)? Loaded,
-    TResult? Function(_Error value)? Error,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? Loading,
-    TResult Function(_Loaded value)? Loaded,
-    TResult Function(_Error value)? Error,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -421,9 +421,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() Loading,
-    required TResult Function(AuthResponseModel data) Loaded,
-    required TResult Function() Error,
+    required TResult Function() loading,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function(String message) error,
   }) {
     return initial();
   }
@@ -432,9 +432,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? Loading,
-    TResult? Function(AuthResponseModel data)? Loaded,
-    TResult? Function()? Error,
+    TResult? Function()? loading,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function(String message)? error,
   }) {
     return initial?.call();
   }
@@ -443,9 +443,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? Loading,
-    TResult Function(AuthResponseModel data)? Loaded,
-    TResult Function()? Error,
+    TResult Function()? loading,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function(String message)? error,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -458,9 +458,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) Loading,
-    required TResult Function(_Loaded value) Loaded,
-    required TResult Function(_Error value) Error,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
   }) {
     return initial(this);
   }
@@ -469,9 +469,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? Loading,
-    TResult? Function(_Loaded value)? Loaded,
-    TResult? Function(_Error value)? Error,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
     return initial?.call(this);
   }
@@ -480,9 +480,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? Loading,
-    TResult Function(_Loaded value)? Loaded,
-    TResult Function(_Error value)? Error,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -519,7 +519,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'LoginState.Loading()';
+    return 'LoginState.loading()';
   }
 
   @override
@@ -535,35 +535,35 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() Loading,
-    required TResult Function(AuthResponseModel data) Loaded,
-    required TResult Function() Error,
+    required TResult Function() loading,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function(String message) error,
   }) {
-    return Loading();
+    return loading();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? Loading,
-    TResult? Function(AuthResponseModel data)? Loaded,
-    TResult? Function()? Error,
+    TResult? Function()? loading,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function(String message)? error,
   }) {
-    return Loading?.call();
+    return loading?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? Loading,
-    TResult Function(AuthResponseModel data)? Loaded,
-    TResult Function()? Error,
+    TResult Function()? loading,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function(String message)? error,
     required TResult orElse(),
   }) {
-    if (Loading != null) {
-      return Loading();
+    if (loading != null) {
+      return loading();
     }
     return orElse();
   }
@@ -572,35 +572,35 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) Loading,
-    required TResult Function(_Loaded value) Loaded,
-    required TResult Function(_Error value) Error,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
   }) {
-    return Loading(this);
+    return loading(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? Loading,
-    TResult? Function(_Loaded value)? Loaded,
-    TResult? Function(_Error value)? Error,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
-    return Loading?.call(this);
+    return loading?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? Loading,
-    TResult Function(_Loaded value)? Loaded,
-    TResult Function(_Error value)? Error,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
-    if (Loading != null) {
-      return Loading(this);
+    if (loading != null) {
+      return loading(this);
     }
     return orElse();
   }
@@ -651,7 +651,7 @@ class _$LoadedImpl implements _Loaded {
 
   @override
   String toString() {
-    return 'LoginState.Loaded(data: $data)';
+    return 'LoginState.loaded(data: $data)';
   }
 
   @override
@@ -675,35 +675,35 @@ class _$LoadedImpl implements _Loaded {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() Loading,
-    required TResult Function(AuthResponseModel data) Loaded,
-    required TResult Function() Error,
+    required TResult Function() loading,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function(String message) error,
   }) {
-    return Loaded(data);
+    return loaded(data);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? Loading,
-    TResult? Function(AuthResponseModel data)? Loaded,
-    TResult? Function()? Error,
+    TResult? Function()? loading,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function(String message)? error,
   }) {
-    return Loaded?.call(data);
+    return loaded?.call(data);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? Loading,
-    TResult Function(AuthResponseModel data)? Loaded,
-    TResult Function()? Error,
+    TResult Function()? loading,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function(String message)? error,
     required TResult orElse(),
   }) {
-    if (Loaded != null) {
-      return Loaded(data);
+    if (loaded != null) {
+      return loaded(data);
     }
     return orElse();
   }
@@ -712,35 +712,35 @@ class _$LoadedImpl implements _Loaded {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) Loading,
-    required TResult Function(_Loaded value) Loaded,
-    required TResult Function(_Error value) Error,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
   }) {
-    return Loaded(this);
+    return loaded(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? Loading,
-    TResult? Function(_Loaded value)? Loaded,
-    TResult? Function(_Error value)? Error,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
-    return Loaded?.call(this);
+    return loaded?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? Loading,
-    TResult Function(_Loaded value)? Loaded,
-    TResult Function(_Error value)? Error,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
-    if (Loaded != null) {
-      return Loaded(this);
+    if (loaded != null) {
+      return loaded(this);
     }
     return orElse();
   }
@@ -760,6 +760,8 @@ abstract class _$$ErrorImplCopyWith<$Res> {
   factory _$$ErrorImplCopyWith(
           _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
       __$$ErrorImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String message});
 }
 
 /// @nodoc
@@ -769,60 +771,84 @@ class __$$ErrorImplCopyWithImpl<$Res>
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+  }) {
+    return _then(_$ErrorImpl(
+      null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
 
 class _$ErrorImpl implements _Error {
-  const _$ErrorImpl();
+  const _$ErrorImpl(this.message);
+
+  @override
+  final String message;
 
   @override
   String toString() {
-    return 'LoginState.Error()';
+    return 'LoginState.error(message: $message)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ErrorImpl);
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorImpl &&
+            (identical(other.message, message) || other.message == message));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, message);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      __$$ErrorImplCopyWithImpl<_$ErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() Loading,
-    required TResult Function(AuthResponseModel data) Loaded,
-    required TResult Function() Error,
+    required TResult Function() loading,
+    required TResult Function(AuthResponseModel data) loaded,
+    required TResult Function(String message) error,
   }) {
-    return Error();
+    return error(message);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? Loading,
-    TResult? Function(AuthResponseModel data)? Loaded,
-    TResult? Function()? Error,
+    TResult? Function()? loading,
+    TResult? Function(AuthResponseModel data)? loaded,
+    TResult? Function(String message)? error,
   }) {
-    return Error?.call();
+    return error?.call(message);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? Loading,
-    TResult Function(AuthResponseModel data)? Loaded,
-    TResult Function()? Error,
+    TResult Function()? loading,
+    TResult Function(AuthResponseModel data)? loaded,
+    TResult Function(String message)? error,
     required TResult orElse(),
   }) {
-    if (Error != null) {
-      return Error();
+    if (error != null) {
+      return error(message);
     }
     return orElse();
   }
@@ -831,40 +857,45 @@ class _$ErrorImpl implements _Error {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) Loading,
-    required TResult Function(_Loaded value) Loaded,
-    required TResult Function(_Error value) Error,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
   }) {
-    return Error(this);
+    return error(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? Loading,
-    TResult? Function(_Loaded value)? Loaded,
-    TResult? Function(_Error value)? Error,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
   }) {
-    return Error?.call(this);
+    return error?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? Loading,
-    TResult Function(_Loaded value)? Loaded,
-    TResult Function(_Error value)? Error,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
-    if (Error != null) {
-      return Error(this);
+    if (error != null) {
+      return error(this);
     }
     return orElse();
   }
 }
 
 abstract class _Error implements LoginState {
-  const factory _Error() = _$ErrorImpl;
+  const factory _Error(final String message) = _$ErrorImpl;
+
+  String get message;
+  @JsonKey(ignore: true)
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

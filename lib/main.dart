@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
                 child: const MahasiswaPage(),
               );
             } else {
-              return AuthPage();
+              return const AuthPage();
             }
           },
         ));
