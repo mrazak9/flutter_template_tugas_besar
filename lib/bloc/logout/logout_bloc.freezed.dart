@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'khs_bloc.dart';
+part of 'logout_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,57 +15,58 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$KhsEvent {
+mixin _$LogoutEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function() getkhs,
+    required TResult Function() logout,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function()? getkhs,
+    TResult? Function()? logout,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function()? getkhs,
+    TResult Function()? logout,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetKhs value) getkhs,
+    required TResult Function(_Logout value) logout,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetKhs value)? getkhs,
+    TResult? Function(_Logout value)? logout,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetKhs value)? getkhs,
+    TResult Function(_Logout value)? logout,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $KhsEventCopyWith<$Res> {
-  factory $KhsEventCopyWith(KhsEvent value, $Res Function(KhsEvent) then) =
-      _$KhsEventCopyWithImpl<$Res, KhsEvent>;
+abstract class $LogoutEventCopyWith<$Res> {
+  factory $LogoutEventCopyWith(
+          LogoutEvent value, $Res Function(LogoutEvent) then) =
+      _$LogoutEventCopyWithImpl<$Res, LogoutEvent>;
 }
 
 /// @nodoc
-class _$KhsEventCopyWithImpl<$Res, $Val extends KhsEvent>
-    implements $KhsEventCopyWith<$Res> {
-  _$KhsEventCopyWithImpl(this._value, this._then);
+class _$LogoutEventCopyWithImpl<$Res, $Val extends LogoutEvent>
+    implements $LogoutEventCopyWith<$Res> {
+  _$LogoutEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -82,7 +83,7 @@ abstract class _$$StartedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$KhsEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$LogoutEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
@@ -96,7 +97,7 @@ class _$StartedImpl implements _Started {
 
   @override
   String toString() {
-    return 'KhsEvent.started()';
+    return 'LogoutEvent.started()';
   }
 
   @override
@@ -112,7 +113,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function() getkhs,
+    required TResult Function() logout,
   }) {
     return started();
   }
@@ -121,7 +122,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function()? getkhs,
+    TResult? Function()? logout,
   }) {
     return started?.call();
   }
@@ -130,7 +131,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function()? getkhs,
+    TResult Function()? logout,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -143,7 +144,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetKhs value) getkhs,
+    required TResult Function(_Logout value) logout,
   }) {
     return started(this);
   }
@@ -152,7 +153,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetKhs value)? getkhs,
+    TResult? Function(_Logout value)? logout,
   }) {
     return started?.call(this);
   }
@@ -161,7 +162,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetKhs value)? getkhs,
+    TResult Function(_Logout value)? logout,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -171,40 +172,40 @@ class _$StartedImpl implements _Started {
   }
 }
 
-abstract class _Started implements KhsEvent {
+abstract class _Started implements LogoutEvent {
   const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$GetKhsImplCopyWith<$Res> {
-  factory _$$GetKhsImplCopyWith(
-          _$GetKhsImpl value, $Res Function(_$GetKhsImpl) then) =
-      __$$GetKhsImplCopyWithImpl<$Res>;
+abstract class _$$LogoutImplCopyWith<$Res> {
+  factory _$$LogoutImplCopyWith(
+          _$LogoutImpl value, $Res Function(_$LogoutImpl) then) =
+      __$$LogoutImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetKhsImplCopyWithImpl<$Res>
-    extends _$KhsEventCopyWithImpl<$Res, _$GetKhsImpl>
-    implements _$$GetKhsImplCopyWith<$Res> {
-  __$$GetKhsImplCopyWithImpl(
-      _$GetKhsImpl _value, $Res Function(_$GetKhsImpl) _then)
+class __$$LogoutImplCopyWithImpl<$Res>
+    extends _$LogoutEventCopyWithImpl<$Res, _$LogoutImpl>
+    implements _$$LogoutImplCopyWith<$Res> {
+  __$$LogoutImplCopyWithImpl(
+      _$LogoutImpl _value, $Res Function(_$LogoutImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$GetKhsImpl implements _GetKhs {
-  const _$GetKhsImpl();
+class _$LogoutImpl implements _Logout {
+  const _$LogoutImpl();
 
   @override
   String toString() {
-    return 'KhsEvent.getkhs()';
+    return 'LogoutEvent.logout()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$GetKhsImpl);
+        (other.runtimeType == runtimeType && other is _$LogoutImpl);
   }
 
   @override
@@ -214,29 +215,29 @@ class _$GetKhsImpl implements _GetKhs {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function() getkhs,
+    required TResult Function() logout,
   }) {
-    return getkhs();
+    return logout();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function()? getkhs,
+    TResult? Function()? logout,
   }) {
-    return getkhs?.call();
+    return logout?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function()? getkhs,
+    TResult Function()? logout,
     required TResult orElse(),
   }) {
-    if (getkhs != null) {
-      return getkhs();
+    if (logout != null) {
+      return logout();
     }
     return orElse();
   }
@@ -245,40 +246,40 @@ class _$GetKhsImpl implements _GetKhs {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetKhs value) getkhs,
+    required TResult Function(_Logout value) logout,
   }) {
-    return getkhs(this);
+    return logout(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetKhs value)? getkhs,
+    TResult? Function(_Logout value)? logout,
   }) {
-    return getkhs?.call(this);
+    return logout?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetKhs value)? getkhs,
+    TResult Function(_Logout value)? logout,
     required TResult orElse(),
   }) {
-    if (getkhs != null) {
-      return getkhs(this);
+    if (logout != null) {
+      return logout(this);
     }
     return orElse();
   }
 }
 
-abstract class _GetKhs implements KhsEvent {
-  const factory _GetKhs() = _$GetKhsImpl;
+abstract class _Logout implements LogoutEvent {
+  const factory _Logout() = _$LogoutImpl;
 }
 
 /// @nodoc
-mixin _$KhsState {
+mixin _$LogoutState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
@@ -332,15 +333,16 @@ mixin _$KhsState {
 }
 
 /// @nodoc
-abstract class $KhsStateCopyWith<$Res> {
-  factory $KhsStateCopyWith(KhsState value, $Res Function(KhsState) then) =
-      _$KhsStateCopyWithImpl<$Res, KhsState>;
+abstract class $LogoutStateCopyWith<$Res> {
+  factory $LogoutStateCopyWith(
+          LogoutState value, $Res Function(LogoutState) then) =
+      _$LogoutStateCopyWithImpl<$Res, LogoutState>;
 }
 
 /// @nodoc
-class _$KhsStateCopyWithImpl<$Res, $Val extends KhsState>
-    implements $KhsStateCopyWith<$Res> {
-  _$KhsStateCopyWithImpl(this._value, this._then);
+class _$LogoutStateCopyWithImpl<$Res, $Val extends LogoutState>
+    implements $LogoutStateCopyWith<$Res> {
+  _$LogoutStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -357,7 +359,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$KhsStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$LogoutStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -371,7 +373,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'KhsState.initial()';
+    return 'LogoutState.initial()';
   }
 
   @override
@@ -458,7 +460,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements KhsState {
+abstract class _Initial implements LogoutState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -471,7 +473,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$KhsStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$LogoutStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -485,7 +487,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'KhsState.loading()';
+    return 'LogoutState.loading()';
   }
 
   @override
@@ -572,7 +574,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements KhsState {
+abstract class _Loading implements LogoutState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -585,7 +587,7 @@ abstract class _$$LoadedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadedImplCopyWithImpl<$Res>
-    extends _$KhsStateCopyWithImpl<$Res, _$LoadedImpl>
+    extends _$LogoutStateCopyWithImpl<$Res, _$LoadedImpl>
     implements _$$LoadedImplCopyWith<$Res> {
   __$$LoadedImplCopyWithImpl(
       _$LoadedImpl _value, $Res Function(_$LoadedImpl) _then)
@@ -599,7 +601,7 @@ class _$LoadedImpl implements _Loaded {
 
   @override
   String toString() {
-    return 'KhsState.loaded()';
+    return 'LogoutState.loaded()';
   }
 
   @override
@@ -686,7 +688,7 @@ class _$LoadedImpl implements _Loaded {
   }
 }
 
-abstract class _Loaded implements KhsState {
+abstract class _Loaded implements LogoutState {
   const factory _Loaded() = _$LoadedImpl;
 }
 
@@ -699,7 +701,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$KhsStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$LogoutStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -713,7 +715,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'KhsState.error()';
+    return 'LogoutState.error()';
   }
 
   @override
@@ -800,6 +802,6 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements KhsState {
+abstract class _Error implements LogoutState {
   const factory _Error() = _$ErrorImpl;
 }
