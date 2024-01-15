@@ -28,21 +28,6 @@ class _KhsPageState extends State<KhsPage> {
             ),
           ),
           const SizedBox(height: 8.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
-                "14 of 64 results",
-                style: TextStyle(
-                  color: ColorName.grey,
-                ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.filter_list),
-              ),
-            ],
-          ),
           const SizedBox(height: 16.0),
           ListTile(
             contentPadding: const EdgeInsets.all(0),
