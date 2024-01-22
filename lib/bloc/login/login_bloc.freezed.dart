@@ -20,18 +20,21 @@ mixin _$LoginEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function(AuthRequestModel requestModel) login,
+    required TResult Function(AuthRequestModel requestModel) getUserLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function(AuthRequestModel requestModel)? login,
+    TResult? Function(AuthRequestModel requestModel)? getUserLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function(AuthRequestModel requestModel)? login,
+    TResult Function(AuthRequestModel requestModel)? getUserLogin,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -39,18 +42,21 @@ mixin _$LoginEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(_Login value) login,
+    required TResult Function(_GetUserLogin value) getUserLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(_Login value)? login,
+    TResult? Function(_GetUserLogin value)? getUserLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(_Login value)? login,
+    TResult Function(_GetUserLogin value)? getUserLogin,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -114,6 +120,7 @@ class _$StartedImpl implements _Started {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function(AuthRequestModel requestModel) login,
+    required TResult Function(AuthRequestModel requestModel) getUserLogin,
   }) {
     return started();
   }
@@ -123,6 +130,7 @@ class _$StartedImpl implements _Started {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function(AuthRequestModel requestModel)? login,
+    TResult? Function(AuthRequestModel requestModel)? getUserLogin,
   }) {
     return started?.call();
   }
@@ -132,6 +140,7 @@ class _$StartedImpl implements _Started {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function(AuthRequestModel requestModel)? login,
+    TResult Function(AuthRequestModel requestModel)? getUserLogin,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -145,6 +154,7 @@ class _$StartedImpl implements _Started {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(_Login value) login,
+    required TResult Function(_GetUserLogin value) getUserLogin,
   }) {
     return started(this);
   }
@@ -154,6 +164,7 @@ class _$StartedImpl implements _Started {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(_Login value)? login,
+    TResult? Function(_GetUserLogin value)? getUserLogin,
   }) {
     return started?.call(this);
   }
@@ -163,6 +174,7 @@ class _$StartedImpl implements _Started {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(_Login value)? login,
+    TResult Function(_GetUserLogin value)? getUserLogin,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -243,6 +255,7 @@ class _$LoginImpl implements _Login {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function(AuthRequestModel requestModel) login,
+    required TResult Function(AuthRequestModel requestModel) getUserLogin,
   }) {
     return login(requestModel);
   }
@@ -252,6 +265,7 @@ class _$LoginImpl implements _Login {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function(AuthRequestModel requestModel)? login,
+    TResult? Function(AuthRequestModel requestModel)? getUserLogin,
   }) {
     return login?.call(requestModel);
   }
@@ -261,6 +275,7 @@ class _$LoginImpl implements _Login {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function(AuthRequestModel requestModel)? login,
+    TResult Function(AuthRequestModel requestModel)? getUserLogin,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -274,6 +289,7 @@ class _$LoginImpl implements _Login {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(_Login value) login,
+    required TResult Function(_GetUserLogin value) getUserLogin,
   }) {
     return login(this);
   }
@@ -283,6 +299,7 @@ class _$LoginImpl implements _Login {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(_Login value)? login,
+    TResult? Function(_GetUserLogin value)? getUserLogin,
   }) {
     return login?.call(this);
   }
@@ -292,6 +309,7 @@ class _$LoginImpl implements _Login {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(_Login value)? login,
+    TResult Function(_GetUserLogin value)? getUserLogin,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -307,6 +325,147 @@ abstract class _Login implements LoginEvent {
   AuthRequestModel get requestModel;
   @JsonKey(ignore: true)
   _$$LoginImplCopyWith<_$LoginImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$GetUserLoginImplCopyWith<$Res> {
+  factory _$$GetUserLoginImplCopyWith(
+          _$GetUserLoginImpl value, $Res Function(_$GetUserLoginImpl) then) =
+      __$$GetUserLoginImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({AuthRequestModel requestModel});
+}
+
+/// @nodoc
+class __$$GetUserLoginImplCopyWithImpl<$Res>
+    extends _$LoginEventCopyWithImpl<$Res, _$GetUserLoginImpl>
+    implements _$$GetUserLoginImplCopyWith<$Res> {
+  __$$GetUserLoginImplCopyWithImpl(
+      _$GetUserLoginImpl _value, $Res Function(_$GetUserLoginImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? requestModel = null,
+  }) {
+    return _then(_$GetUserLoginImpl(
+      null == requestModel
+          ? _value.requestModel
+          : requestModel // ignore: cast_nullable_to_non_nullable
+              as AuthRequestModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GetUserLoginImpl implements _GetUserLogin {
+  const _$GetUserLoginImpl(this.requestModel);
+
+  @override
+  final AuthRequestModel requestModel;
+
+  @override
+  String toString() {
+    return 'LoginEvent.getUserLogin(requestModel: $requestModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetUserLoginImpl &&
+            (identical(other.requestModel, requestModel) ||
+                other.requestModel == requestModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, requestModel);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$GetUserLoginImplCopyWith<_$GetUserLoginImpl> get copyWith =>
+      __$$GetUserLoginImplCopyWithImpl<_$GetUserLoginImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function(AuthRequestModel requestModel) login,
+    required TResult Function(AuthRequestModel requestModel) getUserLogin,
+  }) {
+    return getUserLogin(requestModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function(AuthRequestModel requestModel)? login,
+    TResult? Function(AuthRequestModel requestModel)? getUserLogin,
+  }) {
+    return getUserLogin?.call(requestModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(AuthRequestModel requestModel)? login,
+    TResult Function(AuthRequestModel requestModel)? getUserLogin,
+    required TResult orElse(),
+  }) {
+    if (getUserLogin != null) {
+      return getUserLogin(requestModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_Login value) login,
+    required TResult Function(_GetUserLogin value) getUserLogin,
+  }) {
+    return getUserLogin(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(_Login value)? login,
+    TResult? Function(_GetUserLogin value)? getUserLogin,
+  }) {
+    return getUserLogin?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_Login value)? login,
+    TResult Function(_GetUserLogin value)? getUserLogin,
+    required TResult orElse(),
+  }) {
+    if (getUserLogin != null) {
+      return getUserLogin(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetUserLogin implements LoginEvent {
+  const factory _GetUserLogin(final AuthRequestModel requestModel) =
+      _$GetUserLoginImpl;
+
+  AuthRequestModel get requestModel;
+  @JsonKey(ignore: true)
+  _$$GetUserLoginImplCopyWith<_$GetUserLoginImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

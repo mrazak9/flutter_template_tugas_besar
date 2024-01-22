@@ -5,9 +5,9 @@ import '../../common/components/search_input.dart';
 import '../../common/constants/colors.dart';
 import '../../common/constants/images.dart';
 import 'absensi_page.dart';
+import 'jadwal_matkul_page.dart';
 import 'khs_page.dart';
-import 'nilai_mk_page.dart';
-import 'schedules_page.dart';
+import 'nilaimk_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -92,7 +92,7 @@ class _DashboardPageState extends State<DashboardPage> {
           backgroundColor: const Color.fromARGB(255, 19, 219, 193),
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return const SchedulesPage();
+              return const JadwalMatkulPage();
             }));
           },
           imagePath: Images.jadwal,

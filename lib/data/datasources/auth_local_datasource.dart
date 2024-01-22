@@ -1,5 +1,6 @@
-import 'package:flutter_template_tugas_besar/data/models/response/auth_response_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../models/response/auth_response_model.dart';
 
 class AuthLocalDatasource {
   Future<bool> saveAuthData(AuthResponseModel data) async {

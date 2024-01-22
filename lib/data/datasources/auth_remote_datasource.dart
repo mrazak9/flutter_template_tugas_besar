@@ -1,9 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_template_tugas_besar/common/constants/variables.dart';
-import 'package:flutter_template_tugas_besar/data/datasources/auth_local_datasource.dart';
-import 'package:flutter_template_tugas_besar/data/models/request/auth_request_model.dart';
-import 'package:flutter_template_tugas_besar/data/models/response/auth_response_model.dart';
 import 'package:http/http.dart' as http;
+
+import '../../common/constants/variables.dart';
+import '../models/request/auth_request_model.dart';
+import '../models/response/auth_response_model.dart';
+import 'auth_local_datasource.dart';
 
 class AuthRemoteDatasource {
   Future<Either<String, AuthResponseModel>> login(
@@ -17,6 +18,7 @@ class AuthRemoteDatasource {
       headers: headers,
       body: requestModel.toJson(),
     );
+
     if (response.statusCode == 200) {
       return Right(AuthResponseModel.fromJson(response.body));
     } else {
@@ -34,6 +36,7 @@ class AuthRemoteDatasource {
       Uri.parse('${Variables.baseUrl}/api/logout'),
       headers: headers,
     );
+
     if (response.statusCode == 200) {
       return const Right('Logout Successfuly');
     } else {

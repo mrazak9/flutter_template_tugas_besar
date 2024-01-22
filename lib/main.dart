@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-// import 'package:flutter_template_tugas_besar/bloc/bloc/login_bloc.dart';
-import 'package:flutter_template_tugas_besar/bloc/khs/khs_bloc.dart';
-import 'package:flutter_template_tugas_besar/data/datasources/auth_local_datasource.dart';
-import 'package:flutter_template_tugas_besar/pages/auth/auth_page.dart';
-import 'package:flutter_template_tugas_besar/pages/mahasiswa/mahasiswa_page.dart';
 
-import 'pages/auth/splash_page.dart';
+import 'bloc/khs/khs_bloc.dart';
+import 'data/datasources/auth_local_datasource.dart';
+import 'pages/auth/auth_page.dart';
+import 'pages/mahasiswa/mahasiswa_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,13 +15,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => KhsBloc(),
+        ),
+      ],
+      child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        // home: const SplashPage(),
         // home: BlocProvider(
         //   create: (context) => LoginBloc(),
         //   child: const SplashPage(),
@@ -40,6 +43,8 @@ class MyApp extends StatelessWidget {
               return const AuthPage();
             }
           },
-        ));
+        ),
+      ),
+    );
   }
 }

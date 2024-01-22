@@ -76,7 +76,7 @@ class _LoginBottomSheetState extends State<LoginBottomSheet> {
               ),
               const SizedBox(height: 8.0),
               const Text(
-                "Masukkan username dan password agar bisa mengakses informasi administrasi.",
+                "Masukkan email dan password agar bisa mengakses informasi administrasi.",
                 style: TextStyle(
                   color: ColorName.grey,
                 ),

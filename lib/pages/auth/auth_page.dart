@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_template_tugas_besar/bloc/login/login_bloc.dart';
+
+import '../../bloc/login/login_bloc.dart';
 import '../../common/components/buttons.dart';
 import '../../common/constants/colors.dart';
 import '../../common/constants/images.dart';
-import '../dosen/dosen_page.dart';
-import '../mahasiswa/mahasiswa_page.dart';
+// import '../dosen/dosen_page.dart';
+// import '../mahasiswa/mahasiswa_page.dart';
 import 'widgets/login_bottom_sheet.dart';
 
 class AuthPage extends StatefulWidget {
